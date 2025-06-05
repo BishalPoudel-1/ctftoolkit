@@ -131,7 +131,7 @@ while true; do
             if [ $? -eq 0 ]; then
                 echo -e "${green}$tool installed successfully.${nocolor}"
             else
-                echo -e "${red}Failed to install $tool.${nocolor}"
+                echo -e "${red}Failed to install $tool.${nocolor}It might not exist in your package manager."
             fi
         done
         echo "All tools attempted to install."
@@ -143,7 +143,7 @@ while true; do
         if [ $? -eq 0 ]; then
             echo -e "${green}$tool_name installed successfully.${nocolor}"
         else
-            echo -e "${red}Failed to install $tool_name.${nocolor}" #give result in red color.
+            echo -e "${red}Failed to install $tool_name.${nocolor}It might not exist in your package manager." #give result in red color.
         fi
     else
         printf "${red}Invalid input. Choose between 1-50, 0 for all, or 100 to exit.${nocolor}\n"
