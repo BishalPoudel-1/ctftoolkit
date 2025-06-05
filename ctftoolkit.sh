@@ -12,10 +12,10 @@ clear
 # Detect package manager
 if command -v apt >/dev/null 2>&1; then
     INSTALLER="sudo apt install -y"
-elif command -v pacman >/dev/null 2>&1; then
-    INSTALLER="sudo pacman -S --noconfirm"
 elif command -v yay >/dev/null 2>&1; then
     INSTALLER="yay -S --noconfirm"
+elif command -v pacman >/dev/null 2>&1; then
+    INSTALLER="sudo pacman -S --noconfirm"
 elif command -v dnf >/dev/null 2>&1; then
     INSTALLER="sudo dnf install -y"
 elif command -v zypper >/dev/null 2>&1; then
