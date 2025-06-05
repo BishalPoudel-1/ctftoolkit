@@ -134,7 +134,7 @@ while true; do
                 echo -e "${red}Failed to install $tool.${nocolor}It might not exist in your package manager."
             fi
         done
-        echo "All tools attempted to install."
+        echo "Tools install successfully."
         exit 0
     elif [ "$choice" -ge 1 ] && [ "$choice" -le 50 ]; then
         tool_name="${TOOL_NAMES[$((choice - 1))]}"
